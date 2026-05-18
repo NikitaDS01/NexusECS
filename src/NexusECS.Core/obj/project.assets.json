@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "LeoECSLite/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LeoECSLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LeoECSLite.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LeoECSLite/1.0.0": {
+      "type": "project",
+      "path": "../NexusECS.ECS/LeoECSLite.csproj",
+      "msbuildProject": "../NexusECS.ECS/LeoECSLite.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "LeoECSLite >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/nikita/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/nikita/GitHub/NewProject/NexusECS/src/NexusECS.ECS/LeoECSLite.csproj": {
+              "projectPath": "/home/nikita/GitHub/NewProject/NexusECS/src/NexusECS.ECS/LeoECSLite.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

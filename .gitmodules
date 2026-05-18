@@ -1,3 +1,0 @@
-[submodule "src/NexusECS.ECS"]
-	path = src/NexusECS.ECS
-	url = https://github.com/NikitaDS01/ecslite-server.git
